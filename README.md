@@ -1,9 +1,10 @@
 # WebHook
 Simple webhook that reacts to http push messages
 
-How to use it: 
+## How to use it: 
 
 The message should look like this
+```
 {
 	"meta": {
 		"notificationType": "update"
@@ -14,5 +15,6 @@ The message should look like this
 		"timeStamp" : "2020-02-15T13:45:30"
 	}
 }
+```
 
 Send it via POST to this endpoint: http://localhost:{portnr}/webhook/notification
