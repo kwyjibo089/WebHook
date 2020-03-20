@@ -10,7 +10,7 @@ namespace WebHook.Controllers
     {
         [HttpPost]
         [Route("notification")]
-        public IActionResult NotificationAsync([FromBody] JObject jObject)
+        public IActionResult Notification([FromBody] JObject jObject)
         {
             Message message = jObject.ToObject<Message>();
 
